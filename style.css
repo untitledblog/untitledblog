@@ -103,6 +103,7 @@ input::placeholder
     padding: 20px;
     border-radius: 4px;
     box-shadow: 0 5px 0px 0px hsl(154, 66%, 41%);
+	outline: none;
 }
 .btn:hover
 {
