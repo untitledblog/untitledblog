@@ -110,6 +110,10 @@ input::placeholder
     background-color: hsl(154, 59%, 51%);
     box-shadow: 0px -5px 0px 0px hsl(154, 66%, 41%);
 }
+.btn:focus
+{
+	outline: none;
+}
 .terms
 {
     font-size: 0.8em;
