@@ -1,170 +1,475 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;600&display=swap');
+/* FONT 
+
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 400, 600; 
+
+*/
+@font-face
+{
+    font-family: "australia-font";
+    src: url("fonts/australia-font/Australia-X3qGo.otf");
+}
+:root
+{
+    --clr-primary: rgb(219, 0, 0);
+    --clr-accent: #fac405;
+}
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body
 {
-    background-color:hsl(0, 100%, 74%) ;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    background-color: rgb(240, 240, 240);
+    font-family: 'Hind Madurai', sans-serif;
 }
-.container
-{
-    width: 100vw;
-    height: 97vh;
-    background: url(images/bg-intro-desktop.png);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-}
-.typograph
-{
-    position: relative;
+header{
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.typ-txt
-{
-    margin-left: 10%;
-    color: #fff;
-    width: 70%;
-}
-.typ-txt h1
-{
-    font-size: 3.7rem;
-    line-height: 1em;
-    margin-bottom: 25px;
-}
-.typ-txt p{
-    font-size: 1.2rem;
-}
-.login-card
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.login-cnt
-{
-    width: 55%;
-}
-.top 
-{
-    color: #fff;
-    background-color: hsl(248, 32%, 49%);
-    padding: 20px;
-    border-radius: 7px;
-    margin-bottom: 25px;
-    text-align: center;
-    box-shadow: 0 8px 0px 0px rgba(0, 0, 0, 0.2);
-}
-.top-bold
-{
-    font-weight: bold;
-    margin-right: 4px;
-}
-.log-card
-{
     background-color: #fff;
-    border-radius: 7px;
-    padding: 40px;
-    box-shadow: 0 8px 0px 0px rgba(0, 0, 0, 0.2);
 }
-input
+h1, h2, h3{
+    font-weight: 600;
+}
+p
+{
+    font-weight: 400;
+}
+.navbar
+{
+    max-width: 1440px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.nav-brand a
+{
+    text-decoration: none;
+    color: black;
+    font-family: australia-font;
+    font-size: 2rem;
+}
+.nav
+{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-left: -6%;
+}
+.nav-link
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 1.5em .7em;
+    cursor: pointer;
+}
+.nav-link a
+{
+    text-decoration: none;
+    color: #333;
+}
+.nav-link::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 3.6px;
+    background-color: var(--clr-primary);
+    transition: width 0.07s ease-in;
+}
+.nav-link:hover::before,
+.nav-link:hover a
 {
     width: 100%;
-    border: 1px solid hsl(246, 25%, 77%);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 7px;
+    color: red;
+    transition: width 0.3s ease;
 }
-input:focus
-{
-    border-color: hsl(248, 32%, 49%);
-    outline: none;
-}
-input::placeholder
-    {
-        font-weight: bold;
-    }
 .btn
 {
-    border: 1px solid hsl(154, 66%, 41%);
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    width: 100%;
-    background-color: hsl(154, 59%, 51%);
     border: none;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 5px 0px 0px hsl(154, 66%, 41%);
-	outline: none;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 100px;
+    background-color: var(--clr-accent);
+    font-size: 1.2em;
+    z-index: 0;
+}
+.btn::before
+{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-color: var(--clr-primary);
+    left: -100px;
+    top: 0;
+    transition: 0.3s ease;
 }
 .btn:hover
 {
-    background-color: hsl(154, 59%, 51%);
-    box-shadow: 0px -5px 0px 0px hsl(154, 66%, 41%);
+    background-color: none;
+    color: #fff;
+    transition: color 0.01s 0.1s ease;
 }
-.btn:focus
+.btn:hover::before
 {
-	outline: none;
+    left: 0;
+    transition: 0.3s ease;
+    z-index: -1;
 }
-.terms
+.section-banner
 {
-    font-size: 0.8em;
-    text-align: center;
-    font-weight: lighter;
-    margin-top: 25px;
+    height: 87vh;
+    width: 100%;
+    position: relative;
 }
-.left
+.banner
 {
-    color: hsl(246, 25%, 77%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    color: #fff;
+    font-family: 'australia-font';
+    font-weight: 600;
+    font-size: 4em;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url(images/96475648-veg-tandoori-momos.jpg);
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.red
+.banner h2{
+    max-width: 1440px;
+}
+.down-circle
 {
-    color: hsl(0, 100%, 74%);
-    font-weight: bold;
-    text-decoration: none;
+    position: absolute;
+    bottom: -4%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+    background-color: var(--clr-accent);
+    border-radius: 50%;
+}
+.down-circle::before
+{
+    content: "\f0dd";
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: 2.5em;
+    position: absolute;
+    left: 33%;
+    animation: 1s up-down infinite linear;
 }
 
-@media screen and (max-width: 768px)
+@keyframes up-down
 {
-    .container
+    from
     {
-        background: url(images/bg-intro-mobile.png);
-        grid-template-columns: 100%;
-        height: auto;
+        top: 2%;
+        opacity: 0;
     }
-    .typograph, .login-card
+    to
     {
-        margin-bottom: 20%;
+        top: 15%;
+        opacity: 1;
     }
-    .typ-txt{
-        text-align: center;
-        margin-left: 0;
-        margin-top: 30%;
-        width: 90%;
-    }
-    .typ-txt h1
-    {
-        font-size: 2em;
-    }
-    .typ-txt p
-    {
-        font-size: 1em;
-    }
-    .login-cnt
-    {
-        width: 90%;
-    }
-    .top, .log-card
-    {
-        padding: 20px;
-    }
+}
+
+.section-intro
+{
+    height: 100%;
+    padding: 5em 3em 3em 3em;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+}
+.section-title h2
+{
+    font-family: 'australia-font';
+    font-weight: 600;
+    font-size: 3em;
+    margin-top: 2%;
+    color: var(--clr-primary, red);
+}
+.section-services
+{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(380px, 1fr));
+    gap: 2em;
+    margin-top: 4em;
+    justify-content: center;
+}
+.section-service
+{
+    display: flex;
+    flex-direction: column;
+}
+.service__img
+{
+    height: 200px;
+}
+.service__title
+{
+    font-size: 1.7em;
+    color: var(--clr-primary);
+    margin: 0.7em 0;
+}
+.section-popdishes
+{
+    background-color: #fac405;
+    padding: 2em 0;
+}
+.section-container
+{
+    text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.section-container h2
+{
+    font-family: 'australia-font';
+    font-weight: 600;
+    font-size: 3em;
+    margin-top: 2%;
+    color: var(--clr-primaryy, rgb(219, 0, 0));
+}
+.popdishes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    margin-top: 2em;
+}
+.popdish
+{
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+    border-radius: 4px;
+}
+.dish__img
+{
+    width: 100%;
+    height: 100%;
+}
+.dish__intro
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.dish__intro h3
+{
+    font-size: 4em;
+    position: relative;
+}
+.dish__price
+{
+    position: absolute;
+    top: -15px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    background-color: rgb(173, 0, 0);
+    border-radius: 4px;
+    padding: 1.5px 4px;
+}
+.dish__intro .dish__order
+{
+    border: none;
+    background-color: var(--clr-primary);
+    padding:1em;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1em;
+}
+
+.popdish:hover .dish__intro
+{
+    color: #fff;
+    opacity: 1;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    animation: 0.5s up ease forwards;
+}
+.popdish:hover .dish__price
+{
+    top: -5px;
+    right: 0;
+}
+
+@keyframes up
+{
     
+    0%
+    {
+        height: 0%;
+    }
+    100%
+    {
+        height: 100%;
+    }
+}
+
+@keyframes price
+{
+    0%
+    {
+        left: 0;
+        width: 0%;
+    }
+    100%
+    {
+        left: 0;
+        width: 100%;
+    }
+}
+.dish__order:hover
+{
+    background-color: rgb(173, 0, 0);
+    cursor: pointer;
+}
+
+.menu-container
+{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem 0 4rem 0;
+}
+.menu__title h2
+{
+    font-family: 'australia-font';
+    text-align: center;
+    color: var(--clr-primary);
+    padding: .1rem;
+    font-size: 3em;
+    margin: 2rem 0;
+}
+
+
+
+
+
+/* Menu */
+.list__title
+{
+    background-color: var(--clr-primary);
+    padding: .3rem  .5rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.list__container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    list-style: none;
+    justify-content: space-between;
+}
+.list__container
+{
+    padding-top: .5rem;
+}
+
+.list__container ul li:hover
+{
+    color: var(--clr-primary);
+    cursor: pointer;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    padding: .3rem .5rem;
+}
+.list:hover .food-name
+{
+    color: var(--clr-primary);
+    cursor: pointer;
+}
+.food-price
+{
+    font-weight: 600;
+    color: var(--clr-primary);
+}
+
+.menu__list-nonveg
+{
+    margin-top: 1rem;
+}
+
+
+.footer
+{
+    background-color: var(--clr-primary);
+    height: 30vh;
+    color: #fff;
+}
+
+.foot-columns
+{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    justify-content: space-between;
+    align-content: center;
+    height: 100%;
+}
+
+.col-1{
+    font-family: 'australia-font';
+    font-size: 2rem;
+    align-self: center;
+}
+
+.foot-link-title
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.col-2 ul
+{
+    margin-top: 1rem;
+    list-style: none;
+}
+.col-2 ul li:hover,
+.social-links a:hover
+{
+    color: var(--clr-accent);
+    cursor: pointer;
+}
+.social-links
+{
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.social-links a
+{
+    text-decoration: none;
+    color: #fff;
+    padding-right: 1rem;
 }
