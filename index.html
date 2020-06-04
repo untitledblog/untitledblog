@@ -3,140 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magnificent momos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/a75558821d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <h2 class="nav-brand"><a href="index.html">Maginificent momos</a></h2>
-            <nav class="nav">
-                    <div class="nav-link"><a href="#">Home</a></div>
-                    <div class="nav-link"><a href="#">About</a></div>
-                    <div class="nav-link"><a href="#">Menu</a></div>
-                    <div class="nav-link"><a href="#">Menu</a></div>
-                    <div class="nav-link"><a href="#">Menu</a></div>
-            </nav>
-            <div class="cart-button">
-                <button class="btn">Cart</button>
+    <header class="top-nav">
+        <div class="logo"><h3>HNGi7</h3></div>
+        <div class="team-name">
+            <div class="team-logo"><i class="fas fa-bolt"></i></div>
+            <div class="team-name">Team<span>Flash</span>
+        </div>
+        </div>
+        <div class="user-profile">
+            <div class="user_det">
+                <div class="user__name">sixpathdev</div>
+                <div class="user__role">Lead</div>
+            </div>
+            <div class="user__img"><img src="images/user1.jpeg" alt="user"></div>
+        </div>
+        <div class="notification">
+            <div class="bell">
+                <i class="far fa-bell"></i>
+                <div class="bell__number">23</div>
             </div>
         </div>
     </header>
-    <section class="section-banner">
-        <div class="banner">
-            <h2>Get the taste of best Momos ever</h2>
+    <section class="main-section">
+        <div class="section__nav">
+            <div class="nav-link active"><i class="fas fa-th-large"></i></div>
+            <div class="nav-link"><i class="far fa-file-alt"></i></div>
+            <div class="nav-link"><i class="fas fa-info-circle"></i></div>
         </div>
-        <div class="down-circle"></div>
+        <div class="section__dashboard">
+            <div class="dashboard__title"><h2>All Scripts</h2></div>
+            <div class="dashboard__buttons">
+                <div class="custom-select">
+                    <div class="down-ico"><i class="fas fa-sort-down"></i></div>
+                    <select class="select">
+                      <option class="select__options" value="0">Filter<i class="fas fa-sort-down"></i></option>
+                      <option class="select__options" value="1">2</option>
+                      <option class="select__options"  value="2">3</option>
+                      <option class="select__options" value="3">4</option>
+                    </select>
+                  </div>
+                <div class="search-box">
+                    <input class="input" type="text" placeholder="Search">
+                    <span class="search-ico"><i class="fas fa-search"></i></span>
+                </div>
+                <div class="btn submitted"><span>Submitted</span><span class="number">186</span></div>
+                <div class="btn passed"><span>Passed</span><span class="number">123</span></div>
+                <div class="btn failed"><span>Failed</span><span class="number">63</span></div>
+            </div>
+            <div class="dashboard__container">
+                <div class="dashboard__card">
+                    <div class="card__title">
+                        <div class="num">#</div>
+                        <div class="name">name</div>
+                        <div class="message">Message</div>
+                        <div class="status">Status</div>
+                    </div>
+                    <div class="card__content">
+                        <div class="num">1</div>
+                        <div class="name">Jimoh Lawal</div>
+                        <div class="message">Hello World, this is jimoh lawal with HNGi7 ID HNG-1227 using python for stage 2</div>
+                        <div class="status"><span class="state pass">Pass</span><span class="burger"><i class="fas fa-ellipsis-v"></i></span></div>
+                    </div>
+                    <div class="card__content">
+                        <div class="num">2</div>
+                        <div class="name">Jimoh Lawal</div>
+                        <div class="message">Hello World, this is jimoh lawal with HNGi7 ID HNG-1227 using python for stage 2</div>
+                        <div class="status"><span class="state pass">Pass</span><span class="burger"><i class="fas fa-ellipsis-v"></i></span></div>
+                    </div>
+                    <div class="card__content">
+                        <div class="num">3</div>
+                        <div class="name">Jimoh Lawal</div>
+                        <div class="message">Hello World, this is jimoh lawal with HNGi7 ID HNG-1227 using python for stage 2</div>
+                        <div class="status"><span class="state pass">Pass</span><span class="burger"><i class="fas fa-ellipsis-v"></i></span></div>
+                    </div>
+                    <div class="card__content">
+                        <div class="num">4</div>
+                        <div class="name">Jimoh Lawal</div>
+                        <div class="message">Hello World, this is jimoh lawal with HNGi7 ID HNG-1227 using python for stage 2</div>
+                        <div class="status"><span class="state fail">Fail</span><span class="burger"><i class="fas fa-ellipsis-v"></i></span></div>
+                    </div>
+                    <div class="card__content">
+                        <div class="num">5</div>
+                        <div class="name">Jimoh Lawal</div>
+                        <div class="message">Hello World, this is jimoh lawal with HNGi7 ID HNG-1227 using python for stage 2</div>
+                        <div class="status"><span class="state pass">Pass</span><span class="burger"><i class="fas fa-ellipsis-v"></i></span></div>
+                    </div>
+                    <div class="card__content">
+                        <div class="num">6</div>
+                        <div class="name">Jimoh Lawal</div>
+                        <div class="message">Hello World, this is jimoh lawal with HNGi7 ID HNG-1227 using python for stage 2</div>
+                        <div class="status"><span class="state fail">Fail</span><span class="burger"><i class="fas fa-ellipsis-v"></i></span></div>
+                    </div>
+                    <div class="card__content">
+                        <div class="num">7</div>
+                        <div class="name">Jimoh Lawal</div>
+                        <div class="message">Hello World, this is jimoh lawal with HNGi7 ID HNG-1227 using python for stage 2</div>
+                        <div class="status"><span class="state pass">Pass</span><span class="burger"><i class="fas fa-ellipsis-v"></i></span></div>
+                    </div>
+                    <div class="card__content">
+                        <div class="num">8</div>
+                        <div class="name">Jimoh Lawal</div>
+                        <div class="message">Hello World, this is jimoh lawal with HNGi7 ID HNG-1227 using python for stage 2</div>
+                        <div class="status"><span class="state fail">Fail</span><span class="burger"><i class="fas fa-ellipsis-v"></i></span></div>
+                    </div>
+                    <div class="card__content">
+                        <div class="num">9</div>
+                        <div class="name">Jimoh Lawal</div>
+                        <div class="message">Hello World, this is jimoh lawal with HNGi7 ID HNG-1227 using python for stage 2</div>
+                        <div class="status"><span class="state pass">Pass</span><span class="burger"><i class="fas fa-ellipsis-v"></i></span></div>
+                    </div>
+                    <div class="card__content">
+                        <div class="num">10</div>
+                        <div class="name">Jimoh Lawal</div>
+                        <div class="message">Hello World, this is jimoh lawal with HNGi7 ID HNG-1227 using python for stage 2</div>
+                        <div class="status"><span class="state pass">Pass</span><span class="burger"><i class="fas fa-ellipsis-v"></i></span></div>
+                    </div>
+                    <div class="card__content">
+                        <div class="num">11</div>
+                        <div class="name">Jimoh Lawal</div>
+                        <div class="message">Hello World, this is jimoh lawal with HNGi7 ID HNG-1227 using python for stage 2</div>
+                        <div class="status"><span class="state pass">Pass</span><span class="burger"><i class="fas fa-ellipsis-v"></i></span></div>
+                    </div>
+                </div>
+                <div class="page-number">
+                    <div class="box box-active">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                    <div class="box">4</div>
+                    <div class="box">...</div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="section-intro">
-        <div class="section-title"><h2>Our Services</h2></div>
-        <div class="section-services">
-            <div class="section-service">
-                <img src="images/usp1.png" alt="" class="service-img">
-                <h3 class="service__title">Himalayan Momos</h3>
-                <p class="service__para">Our classic Tibetan & Darjeeling-style momos are prepared the authentic way & served with our signature house-made momo chutney. Available in a variety of fillings, they can be enjoyed in eight distinct variants. </p>
-            </div>
-            <div class="section-service">
-                <img src="images/usp3.png" alt="" class="service-img">
-                <h3 class="service__title">100% Original Chindian Taste</h3>
-                <p class="service__para">Welcome to the world of Chindian where we offer a delicious adaptation of Chinese seasoning and cooking techniques to Indian tastes. Choose from a large offering of momos, chowmein, curries, starters & more. </p>
-            </div>
-            <div class="section-service">
-                <img src="images/usp2.png" alt="" class="service-img">
-                <h3 class="service__title">House Made Curries</h3>
-                <p class="service__para">Our chefs make the curry bases in-house using quality ingredients to deliver a total Chindian taste that you are sure to love </p>
-            </div>
-    </section>
-    <section class="section-popdishes">
-        <div class="section-container">
-            <div class="section-title"><h2>Popular Dishes</h2></div>
-            <div class="popdishes">
-                <div class="popdish">
-                    <img src="images/samosa.jpg" alt="" class="dish__img">
-                    <div class="dish__intro">
-                        <h3 class="dish__title">Samosa<span class="dish__price">₹20</span></h3>
-                        <button class="dish__order">Order Now</buLtton>
-                    </div>
-                </div>
-                <div class="popdish">
-                    <img src="images/vada-pav.png" alt="" class="dish__img">
-                    <div class="dish__intro">
-                        <h3 class="dish__title">Vada Pav<span class="dish__price">₹12</span></h3>
-                        <button class="dish__order">Order Now</button>
-                    </div>
-                </div>
-                <div class="popdish">
-                    <img src="images/gulab-jamun.jpg" alt="" class="dish__img">
-                    <div class="dish__intro">
-                        <h3 class="dish__title">Gulaab Jamun<span class="dish__price">₹20</span></h3>
-                        <button class="dish__order">Order Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section-menu">
-        <div class="menu-container">
-            <div class="menu__title"><h2>Menu</h2></div>
-            <div class="menu__list">
-                <div class="menu__list-veg">
-                    <div class="list__title"><h3>Vegetarian</h3></div>
-                        <div class="list__container">
-                            <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                            <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                            <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                            <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                            <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                            <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                            <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                            <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                            <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                        </div>
-                    </div>
-                    <div class="menu__list-nonveg">
-                        <div class="list__title"><h3>Non-Vegetarian</h3></div>
-                            <div class="list__container">
-                                <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                                <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                                <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                                <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                                <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                                <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                                <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                                <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                                <div class="list"><span class="food-name">Samosa</span><span class="food-price"> ₹20</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="foot-columns">
-            <div class="col-1">
-                <h2>Maginificent momos</h2>
-            </div>
-            <div class="col-2">
-                <h3 class="foot-link-title">Quick Links</h3>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Menu</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-            <div class="col-3">
-                <h3 class="foot-link-title">Social Links</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-        </div>
-    </footer>
+
+
+<!-- Dropdown js
+<script>
+    var x, i, j, l, ll, selElmnt, a, b, c;
+    /*look for any elements with the class "custom-select":*/
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+    for (i = 0; i < l; i++) {
+      selElmnt = x[i].getElementsByTagName("select")[0];
+      ll = selElmnt.length;
+      /*for each element, create a new DIV that will act as the selected item:*/
+      a = document.createElement("DIV");
+      a.setAttribute("class", "select-selected");
+      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      x[i].appendChild(a);
+      /*for each element, create a new DIV that will contain the option list:*/
+      b = document.createElement("DIV");
+      b.setAttribute("class", "select-items select-hide");
+      for (j = 1; j < ll; j++) {
+        /*for each option in the original select element,
+        create a new DIV that will act as an option item:*/
+        c = document.createElement("DIV");
+        c.innerHTML = selElmnt.options[j].innerHTML;
+        c.addEventListener("click", function(e) {
+            /*when an item is clicked, update the original select box,
+            and the selected item:*/
+            var y, i, k, s, h, sl, yl;
+            s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+            sl = s.length;
+            h = this.parentNode.previousSibling;
+            for (i = 0; i < sl; i++) {
+              if (s.options[i].innerHTML == this.innerHTML) {
+                s.selectedIndex = i;
+                h.innerHTML = this.innerHTML;
+                y = this.parentNode.getElementsByClassName("same-as-selected");
+                yl = y.length;
+                for (k = 0; k < yl; k++) {
+                  y[k].removeAttribute("class");
+                }
+                this.setAttribute("class", "same-as-selected");
+                break;
+              }
+            }
+            h.click();
+        });
+        b.appendChild(c);
+      }
+      x[i].appendChild(b);
+      a.addEventListener("click", function(e) {
+          /*when the select box is clicked, close any other select boxes,
+          and open/close the current select box:*/
+          e.stopPropagation();
+          closeAllSelect(this);
+          this.nextSibling.classList.toggle("select-hide");
+          this.classList.toggle("select-arrow-active");
+        });
+    }
+    function closeAllSelect(elmnt) {
+      /*a function that will close all select boxes in the document,
+      except the current select box:*/
+      var x, y, i, xl, yl, arrNo = [];
+      x = document.getElementsByClassName("select-items");
+      y = document.getElementsByClassName("select-selected");
+      xl = x.length;
+      yl = y.length;
+      for (i = 0; i < yl; i++) {
+        if (elmnt == y[i]) {
+          arrNo.push(i)
+        } else {
+          y[i].classList.remove("select-arrow-active");
+        }
+      }
+      for (i = 0; i < xl; i++) {
+        if (arrNo.indexOf(i)) {
+          x[i].classList.add("select-hide");
+        }
+      }
+    }
+    /*if the user clicks anywhere outside the select box,
+    then close all select boxes:*/
+    document.addEventListener("click", closeAllSelect);
+    </script>-->
+    
 </body>
 </html>
